@@ -340,6 +340,8 @@ let mainEL = {
 
 				let dt = new Date();
 
+				EL.sendString('224.0.23.0', '1081000A05FF01013001620880008500A000B000B300BA00BB00BE00');
+
 				// スマート電力サブメーターの状態のチェック
 				if (config.enabled && persist.parsed && persist.parsed.IPs && persist.parsed.IPs.length != 0) {
 					// config.debug ? console.log( new Date().toFormat("YYYY-MM-DDTHH24:MI:SS"), '| main.cron.schedule() persist.elParsed:\x1b[32m', persist.elParsed, '\x1b[0m' ):0;
